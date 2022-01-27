@@ -23,7 +23,7 @@ class ClientService {
             .build()
 
         return Retrofit.Builder()
-            .baseUrl("")
+            .baseUrl("https://pokeapi.co/api/v2/")
             .client(client)
             .addConverterFactory(GsonConverterFactory.create(GsonBuilder().create()))
             .build()
